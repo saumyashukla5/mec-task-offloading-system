@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # MEC Emulation Project – Complete Guide (Windows)
 
 ## What This Project Does
@@ -140,3 +141,6 @@ Double-click **`STOP_PROJECT.bat`** or run:
 ```cmd
 docker-compose down
 ```
+=======
+# mec-task-offloading-system
+>>>>>>> aa5cb49e106399d9cdc8493fb41a731937f516fe
