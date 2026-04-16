@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # MEC Emulation Project – Complete Guide (Windows)
 
 ## What This Project Does
