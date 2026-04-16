@@ -1,0 +1,33 @@
+version: "3.9"
+
+
+services:
+
+  edge_server:
+    build:
+      context: ./edge_server
+    container_name: mec_edge
+    ports:
+      - "5001:5001"
+    # NET_ADMIN lets the container run 'tc' to set network delay
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - mec_network
+    restart: unless-stopped
+
+  cloud_server:
+    build:
+      context: ./cloud_server
+    container_name: mec_cloud
+    ports:
+      - "5002:5002"
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - mec_network
+    restart: unless-stopped
+
+networks:
+  mec_network:
+    driver: bridge
